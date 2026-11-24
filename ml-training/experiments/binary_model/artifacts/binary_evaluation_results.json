@@ -1,0 +1,112 @@
+{
+  "model_type": "Binary XGBClassifier (Normal=0, Attack=1)",
+  "scale_pos_weight": 0.46924752807105746,
+  "chosen_threshold": 0.325,
+  "test_results_chosen_threshold": {
+    "accuracy": 0.8718481270951757,
+    "attack_precision": 0.8185131595816774,
+    "attack_recall": 0.9858378187593753,
+    "attack_f1_score": 0.8944171478320041,
+    "false_positive_rate": 0.2678108108108108,
+    "false_negative_rate": 0.014162181240624724,
+    "confusion_matrix": {
+      "true_negative": 27091,
+      "false_positive": 9909,
+      "false_negative": 642,
+      "true_positive": 44690
+    },
+    "roc_auc": 0.98434236092397,
+    "pr_auc": 0.9885191453275433
+  },
+  "test_results_default_threshold_0_5": {
+    "accuracy": 0.9039377155905359,
+    "attack_precision": 0.8740878466182851,
+    "attack_recall": 0.9644621900644137,
+    "attack_f1_score": 0.9170538326813562,
+    "false_positive_rate": 0.17021621621621622,
+    "false_negative_rate": 0.03553780993558634,
+    "confusion_matrix": {
+      "true_negative": 30702,
+      "false_positive": 6298,
+      "false_negative": 1611,
+      "true_positive": 43721
+    }
+  },
+  "attack_breakdown_by_category": {
+    "Analysis": {
+      "total": 677,
+      "detected": 658,
+      "missed": 19,
+      "recall": 0.9719350073855244,
+      "fnr": 0.028064992614475627
+    },
+    "Backdoor": {
+      "total": 583,
+      "detected": 583,
+      "missed": 0,
+      "recall": 1.0,
+      "fnr": 0.0
+    },
+    "DoS": {
+      "total": 4089,
+      "detected": 4087,
+      "missed": 2,
+      "recall": 0.9995108828564441,
+      "fnr": 0.0004891171435558817
+    },
+    "Exploits": {
+      "total": 11132,
+      "detected": 11090,
+      "missed": 42,
+      "recall": 0.9962270930650378,
+      "fnr": 0.0037729069349622707
+    },
+    "Fuzzers": {
+      "total": 6062,
+      "detected": 5487,
+      "missed": 575,
+      "recall": 0.9051468162322666,
+      "fnr": 0.09485318376773343
+    },
+    "Generic": {
+      "total": 18871,
+      "detected": 18870,
+      "missed": 1,
+      "recall": 0.9999470086375921,
+      "fnr": 5.299136240792751e-05
+    },
+    "Reconnaissance": {
+      "total": 3496,
+      "detected": 3495,
+      "missed": 1,
+      "recall": 0.9997139588100686,
+      "fnr": 0.0002860411899313501
+    },
+    "Shellcode": {
+      "total": 378,
+      "detected": 376,
+      "missed": 2,
+      "recall": 0.9947089947089947,
+      "fnr": 0.005291005291005291
+    },
+    "Worms": {
+      "total": 44,
+      "detected": 44,
+      "missed": 0,
+      "recall": 1.0,
+      "fnr": 0.0
+    }
+  },
+  "existing_10_class_binary_comparison": {
+    "accuracy": 0.879731,
+    "attack_precision": 0.833039,
+    "attack_recall": 0.97847,
+    "attack_f1_score": 0.899917,
+    "false_positive_rate": 0.24027,
+    "false_negative_rate": 0.02153,
+    "missed_attacks": 976,
+    "false_alarms": 8890,
+    "roc_auc": 0.9835,
+    "pr_auc": 0.988
+  }
+}

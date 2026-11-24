@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0B0F19] text-slate-100 font-sans antialiased;
+    color-scheme: dark;
+  }
+}
+
+/* Custom sleek scrollbar for cyber aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080C16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glow effects and cyber utilities */
+.glow-effect-blue {
+  box-shadow: 0 0 25px -4px rgba(59, 130, 246, 0.4);
+}
+
+.glow-effect-green {
+  box-shadow: 0 0 25px -4px rgba(16, 185, 129, 0.4);
+}
+
+.glow-effect-red {
+  box-shadow: 0 0 25px -4px rgba(244, 63, 94, 0.4);
+}
+
+.glow-effect-purple {
+  box-shadow: 0 0 25px -4px rgba(139, 92, 246, 0.4);
+}
+
+/* Glassmorphism card surface */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 0 15px -2px rgba(59, 130, 246, 0.15);
+}
+

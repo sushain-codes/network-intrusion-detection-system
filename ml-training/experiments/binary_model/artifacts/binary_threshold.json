@@ -1,0 +1,8 @@
+{
+  "chosen_threshold": 0.325,
+  "selection_criterion": "Maximum F1-score on validation data",
+  "validation_f1": 0.9698982769358522,
+  "validation_recall": 0.9786752691775944,
+  "validation_precision": 0.9612773136907946,
+  "scale_pos_weight": 0.46924752807105746
+}
